@@ -1,0 +1,82 @@
+html { /* Taile du texte dans les élements enfants calculé en rem*/
+    font-size: 16px;
+}
+
+body { /* ou html*/
+    /* on applique une couleur de fond à notre page web*/
+    background-color: #fff3db;
+    /* et on indique une police par défaaut*/
+    font-family: sans-serif;
+    /* Je n'indique pas de taille par défaut. je me base sur les 16 px */
+}
+
+h1 {
+    /* on met le h1 en blanc */ 
+    color: white;
+    /* on lui donne un fond de couleur rouge*/ 
+    background-color:#f02425;
+     /* on le met en majuscule */ 
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+h1, h2 {
+    /* on centre nos titres*/
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;/* 2rem est égal à 16px * 2 donc 2rem est égal à 32opx */
+}
+
+h2, a, .bold, .blue, .astuce {
+    font-weight: bold;
+}
+
+
+
+h2, .red {
+    color: #f02425;
+}
+
+.underline, .astuce {
+    text-align: center;
+    font-style: italic;
+}
+
+
+.underline {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+a {
+    color: #248dd9;
+}
+
+.blue {
+    color: blue;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+}
+
+
+.astuce {
+    font-size: 0.85rem;
+    background-color:#fed48a;
+    padding: 1rem 1rem;
+    color: #666666;  
+}
+
+/* pseudo classe before : texte ajouté au début de la classe axtuce*/
+.astuce::before {
+    content: 'Astuce :';
+}
+.astuce::after {
+    content: ":)";
+}
